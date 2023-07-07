@@ -1,0 +1,49 @@
+html {
+    min-height: 100%;
+    margin: 0;
+    font-family: 'Lucida Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    min-height: 100%;
+    background-color: #f3f3ea;
+}
+
+a.button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    color: #ce3700;
+}
+
+a.button.filled {
+    border-radius: 10px;
+    background-color: #708090;
+    color:white;
+}
+
+main {
+    text-align: center;
+}
+
+section {
+    margin: 0px auto;
+    margin-top: 10vh;
+    margin-bottom: calc(25vh);
+}
+
+img.person {
+    width: 100vw;
+    max-width: 400px;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.hello{
+    position: relative;
+    top: -50px;
+}

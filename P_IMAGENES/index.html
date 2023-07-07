@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/nav.css">
+    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="./CSS/carrusel.css">
+</head>
+<body>
+    <header>
+        <span>LOGO</span>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Contact</a>
+            <a href="#">🌐</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hello">
+            <img class="person" src="./IMG/perfil.png" alt="person">
+            <h2>Hola, mi nombre es Lina Guevara!</h2>
+            <p>¡Bienvenido a mi portafolio de fotografia! Soy una fotografa apasionada y me encanta capturar momentos unicos e inolvidables a traves de mi camara</p>
+            <a class="button" href="#carousel">Algunos de mis trabajos →</a>
+        </section>
+
+        <section id="carousel">
+            <div class="buttons">
+                <button onclick="update(-1)" class="left"><img src="./IMG/chevron-left-solid.svg" alt=""></button>
+                <button onclick="update(1)" class="right"><img src="./IMG/chevron-right-solid.svg" alt=""></button>
+            </div>
+            <img class="item" src="./IMG/CARRUSEL/c1.png">
+            <img class="item" src="./IMG/CARRUSEL/c2.png">
+            <img class="item" src="./IMG/CARRUSEL/c3.png">
+            <img class="item" src="./IMG/CARRUSEL/c4.png">
+            <img class="item" src="./IMG/CARRUSEL/c5.png">
+            <img class="item" src="./IMG/CARRUSEL/c6.png">
+            <img class="item" src="./IMG/CARRUSEL/c7.png">
+            <img class="item" src="./IMG/CARRUSEL/c8.png">
+            <img class="item" src="./IMG/CARRUSEL/c9.png">
+            <img class="item" src="./IMG/CARRUSEL/c10.png">
+            <img class="item" src="./IMG/CARRUSEL/c11.png">
+            <img class="item" src="./IMG/CARRUSEL/c12.png">
+        </section>
+        <script src="./js.js"></script>
+    </main>
+</body>
+</html>

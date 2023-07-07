@@ -1,0 +1,87 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("./IMG/fondo.png");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    margin: 0;
+    height: 50px;
+    align-items: center;
+}
+
+nav:hover {
+    background-color: #252525;
+    transition: background-color 1s;
+}
+
+nav .item {
+    height: max-content;
+}
+
+nav div.context.show {
+    display: flex;
+    background-color: #252525;
+    transition: background-color 1s;
+}
+
+nav div.context {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    background: #25252500;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: larger;
+    color: #252525;
+    height: 30px;
+    line-height: 30px;
+}
+
+nav:hover a {
+    color: #f2f2f2;
+}
+
+main {
+    height: calc(100% - 50px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+main article {
+    font-size: 2em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.shoe {
+    position: fixed;
+    right: -20vh;
+    top: 10%;
+    height: 80%;
+}
+
+b {
+    color: #ffbd59;
+}
+
+@media screen and (max-width: 120vh) {
+  .shoe {
+    display: none;
+  }
+}

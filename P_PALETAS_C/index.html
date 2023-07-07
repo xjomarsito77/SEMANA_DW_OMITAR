@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/nav.css">
+    <link rel="stylesheet" href="./CSS/main.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./IMG/icono_color.png" alt="logo">
+            <span>   Colors</span>
+        </div>
+        <nav>
+            <a href="#">Palette generator</a>
+            <a class="button filled" href="#">Follow</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Genera <span>increibles</span> paletas de colores</h2>
+            <p>¿Buscas una paleta de colores para tu pagina web ? Usa nuestra herramienta </p>
+            <a class="button filled" href="#generator">Iniciar Ahora</a>
+            <a class="button" href="#">Conocer mas</a>
+        </section>
+
+        <section id="generator">
+            <div class="inputs">
+                <p>Insert a color hex code</p>
+                <input type="text" placeholder="#FFFFFF" id="color_input" onchange="generator()">
+                <input type="button" value="Generate" onclick="generator()">
+            </div>
+            <div id="output">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </section>
+        <script src="./js.js"></script>
+    </main>
+</body>
+</html>

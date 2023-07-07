@@ -1,0 +1,98 @@
+html {
+    min-height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    min-height: 100%;
+    background-color: #ffffff;
+}
+
+a.button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+}
+
+a.button.filled {
+    border-radius: 10px;
+    background-color: #8c52ff;
+    color:rgb(0, 0, 0);
+}
+
+main span {
+    color: #ff66c4;
+}
+
+main {
+    position: relative;
+    top: -100px;
+    text-align: center;
+}
+
+section {
+    margin: calc(50vh - 50px) auto;
+}
+
+input {
+    box-shadow: 0px 0px 10px #00000031;
+    border: none;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #252525;
+    border-radius: 10px;
+    outline: none;
+    height: 2em;
+    margin: 5px;
+}
+
+input[type="button"] {
+    color: #ffffff;
+    background-color: #8c52ff;
+    height: 3em;
+}
+
+#generator {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#generator .inputs {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 300px;
+}
+
+#output {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 600px;
+    width: 100%;
+    margin: 2em;
+}
+
+#output div {
+    background-color: #00000010;
+    border-radius: 10px;
+    width: 30vw;
+    height: 30vw;
+    max-height: 175px;
+    max-width: 175px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#output div div {
+    color: white;
+    mix-blend-mode: difference;
+}

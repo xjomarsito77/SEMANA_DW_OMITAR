@@ -1,0 +1,53 @@
+#carousel {
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    gap: 4em;
+    max-width: calc(100% - 80px);
+    transition: all 1s;
+    scroll-behavior: smooth;
+}
+
+#carousel img {
+    position: relative;
+    margin: auto;
+    object-fit: contain;
+    height: 100%;
+}
+
+#carousel .buttons {
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    max-width: calc(100vw);
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons button {
+    border: none;
+    height: 20vw;
+    width: 20vw;
+    max-height: 100px;
+    max-width: 100px;
+    padding: 15px;
+    border-radius: 100%;
+}
+
+.buttons button:hover {
+    filter: invert(1);
+}
+
+@media screen and (max-width: 420px) {
+    #carousel {
+        max-width: 100%;
+    }
+
+    #carousel > img {
+        height: auto;
+        width: 100vw;
+    }
+}
